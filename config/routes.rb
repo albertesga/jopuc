@@ -1,4 +1,12 @@
 Jopuc::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/porque"
+
+  get "static_pages/como"
+
+  get "static_pages/manifiesto"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
