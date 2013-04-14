@@ -1,0 +1,13 @@
+
+
+.margin-botton-login{
+	margin-bottom: 20%;	
+}
+
+.menu-home{
+	margin-top: 30px;
+	}
+	
+.menu-home .navbar-inverse .navbar-inner{
+	background: transparent!important;	
+}

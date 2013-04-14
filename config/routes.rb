@@ -1,4 +1,13 @@
 Jopuc::Application.routes.draw do
+
+  get "users/new"
+
+  root to: 'static_pages#home'
+  match '/porque',    to: 'static_pages#porque'
+  match '/como',   to: 'static_pages#como'
+  match '/manifiesto', to: 'static_pages#manifiesto'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
