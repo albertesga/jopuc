@@ -37,7 +37,7 @@ class UsersController < ApplicationController
 private
 
     def signed_in_user
-      redirect_to signin_url, notice: "Haz login,por favor." unless signed_in?
+      redirect_to login_url, notice: "Haz login, por favor." unless signed_in?
     end
 
     def correct_user
