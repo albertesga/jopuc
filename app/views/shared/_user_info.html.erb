@@ -5,7 +5,7 @@
   <%= current_user.name %>
 </h1>
 <span>
-  <%= link_to "Ver mi cuenta", current_user %>
+  <%= link_to "Ver mi cuenta", edit_user_path(current_user) %>
 </span>
 <span>
   <%= pluralize(current_user.challenges.count, "reto") %>

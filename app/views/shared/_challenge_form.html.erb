@@ -3,9 +3,9 @@
   <%= render 'shared/error_messages', object: f.object %>
     <%= f.text_area :content, placeholder: "Un nuevo reto", :class => "alta-reto" %>
     <p>Empieza</p>
-    <%= date_select :begin, :empieza %>
+    <%= date_select :date_challenge,:begin %>
     <p>Acaba</p>
-    <%= date_select :end, :acaba %>
+    <%= date_select :date_challenge, :end %>
     <%= f.text_area :reward, placeholder: "Recompensa", :class => "alta-reto" %>
 
     <p class="share-label">Público</p>

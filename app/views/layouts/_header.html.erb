@@ -19,6 +19,14 @@
                     <li>
                       <%= link_to "Manifiesto", manifiesto_path %>
                     </li>
+                    <li>
+                      <%= link_to "Ver Retos", retos_path %>
+                    </li>
+                    <li>
+                    <% if signed_in? %>
+                      <%= link_to "Zona Privada", "/users/"+current_user.id.to_s %>
+                    <% end %>
+                  </li>
                   </ul>
                 </div><!--/.nav-collapse -->
               </div>
