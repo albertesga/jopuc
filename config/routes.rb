@@ -10,6 +10,7 @@ Jopuc::Application.routes.draw do
   match '/manifiesto', to: 'static_pages#manifiesto'
   match '/login',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
+  match '/retos', to: 'challenges#index'
 
 
   # The priority is based upon order of creation:

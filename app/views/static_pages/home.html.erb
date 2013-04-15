@@ -8,7 +8,7 @@
           </div>
         </h1>
         <div class="span3">
-          <%= link_to "Login", login_path, method: "delete",  :class => "btn btn-large btn-block btn-info"%>
+          <%= link_to "Login", login_path, :class => "btn btn-large btn-block btn-info"%>
         </div>
       </div>
       <div class="login-form span5" >
@@ -43,7 +43,7 @@
           <dt>Albert ha conseguido su reto: Hacer un MVP de JoPuc</dt>
           <dd>Por conseguir el reto se ha regalado una GoPro</dd>
         </dl>
-        <a href="#">Explorar los últimos retos</a>
+        <%= link_to "Explorar los últimos retos", retos_path%>
       </div><!-- /demo-headline -->
       
       </div>

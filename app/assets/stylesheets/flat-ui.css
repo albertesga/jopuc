@@ -310,7 +310,8 @@ h6 {
   font-weight: 900;
   letter-spacing: -2px;
   line-height: 100px; 
-  color: white;}
+  color: white;
+   }
   .demo-logo .logo {
     background: url("/assets/demo/logo-mask.png") center 0 no-repeat;
     background-size: 256px 186px;
@@ -474,7 +475,7 @@ h6 {
     text-transform: none; }
 
 .demo-browser-author {
-  background: url('/assets/browser-author.jpg') center center no-repeat;
+  background: url('/assets/demo/browser-author.png') center center no-repeat;
   border: 3px solid white;
   display: block;
   height: 84px;

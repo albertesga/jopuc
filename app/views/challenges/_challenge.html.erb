@@ -12,5 +12,8 @@
   <span class="timestamp">
     Creado hace <%= time_ago_in_words(challenge.created_at) %>
   </span>
-  <%= link_to "delete", challenge, method: :delete, data: { confirm: "Estas seguro?" }, title: challenge.content %>
+  <% if current_user?(challenge.user) %>
+    <%= link_to "delete", challenge, method: :delete, data: { confirm: "Estas seguro?" }, title: challenge.content %>
+  <% end %>
+  
 </li>

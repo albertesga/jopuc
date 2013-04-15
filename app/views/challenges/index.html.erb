@@ -1,0 +1,8 @@
+<% provide(:title, 'Todos los retos') %>
+<h1>Algunos retos</h1>
+
+<ul class="challenges">
+  <% @challenges.each do |challenge| %>
+    <%= render @challenges %>
+  <% end %>
+</ul>

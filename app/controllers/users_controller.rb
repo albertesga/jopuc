@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       flash[:notice] = "Bienvendio a JoPuc. Ya puedes subir retos."
       redirect_to @user
     else
-      render 'static_pages/home'
+      render :template => "static_pages/home"
     end
   end
 
