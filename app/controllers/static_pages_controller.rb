@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
+  	@user = User.new
+  	@home = "home-background"
   end
 
   def porque

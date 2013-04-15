@@ -1,0 +1,18 @@
+<% provide(:title, @user.name) %>
+<h1>
+  <%= gravatar_for @user %>
+  Hola <%= @user.name %>!
+</h1>
+
+<%= link_to "Sign out", signout_path, method: "delete" %>
+
+<div class="span8">
+    <% if @user.challenges.any? %>
+      <h3>Retos (<%= @user.challenges.count %>)</h3>
+      <ol class="challenges">
+        <%= render @challenges %>
+      </ol>
+    <% else %>
+    Aún no tienes retos
+    <% end %>
+  </div>

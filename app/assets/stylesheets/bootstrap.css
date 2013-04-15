@@ -226,8 +226,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background: url('/assets/bg.jpg') no-repeat center center fixed;
+  background-color: #34495e;
+  color: white!important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

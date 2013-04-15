@@ -11,3 +11,15 @@
 .menu-home .navbar-inverse .navbar-inner{
 	background: transparent!important;	
 }
+
+.error-message{
+	color: #c0392b;
+}
+
+.home-background{
+	background: url('/assets/bg.jpg') no-repeat center center fixed;
+}
+
+.login-form p{
+	color:#34495e;
+}

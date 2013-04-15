@@ -1,11 +1,15 @@
 Jopuc::Application.routes.draw do
 
-  get "users/new"
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :challenges, only: [:create, :destroy]
 
   root to: 'static_pages#home'
   match '/porque',    to: 'static_pages#porque'
   match '/como',   to: 'static_pages#como'
   match '/manifiesto', to: 'static_pages#manifiesto'
+  match '/login',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
 
   # The priority is based upon order of creation:
