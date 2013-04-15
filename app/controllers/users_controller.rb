@@ -20,6 +20,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @challenges = @user.challenges
+    @challenge = current_user.challenges.build if signed_in?
   end
 
   def update

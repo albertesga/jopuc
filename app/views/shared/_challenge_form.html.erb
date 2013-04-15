@@ -1,0 +1,21 @@
+<div class="login-form span4" >
+<%= form_for(@challenge) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+    <%= f.text_area :content, placeholder: "Un nuevo reto", :class => "alta-reto" %>
+    <p>Empieza</p>
+    <%= date_select :begin, :empieza %>
+    <p>Acaba</p>
+    <%= date_select :end, :acaba %>
+    <%= f.text_area :reward, placeholder: "Recompensa", :class => "alta-reto" %>
+
+    <p class="share-label">Público</p>
+    <div class="toggle">
+      <label class="toggle-radio" for="share-toggle2">ON</label>
+      <input type="radio" name="share-toggles" id="share-toggle2" value="toggle1">
+      <label class="toggle-radio" for="share-toggle1">OFF</label>
+      <input type="radio" name="share-toggles" id="share-toggle1" value="toggle2" checked="checked">
+    </div>
+<br/>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>
+</div>
