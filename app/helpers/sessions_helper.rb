@@ -11,7 +11,7 @@ module SessionsHelper
 
 	def signed_in_user
     unless signed_in?
-      redirect_to signin_url, notice: "Please sign in."
+      redirect_to signin_url, notice: "Por favor, haz login"
     end
   end
 
