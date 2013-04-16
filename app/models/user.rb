@@ -10,7 +10,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :avatar
   has_secure_password
   has_many :challenges, dependent: :destroy
   before_save { |user| user.email = email.downcase }
@@ -23,6 +23,13 @@ class User < ActiveRecord::Base
 
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
+
+  # This method associates the attribute ":avatar" with a file attachment
+  has_attached_file :avatar, styles: {
+    thumb: '100x100>',
+    square: '200x200#',
+    medium: '300x300>'
+  }
 
   private
 

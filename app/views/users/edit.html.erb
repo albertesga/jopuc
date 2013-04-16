@@ -2,26 +2,36 @@
 <h1>Cambia los datos de tu usuario</h1>
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="span6 offset3 login-form">
     <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
-
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="control-group">
       <%= f.label :name %>
       <%= f.text_field :name %>
+    </div>
 
+    <div class="control-group">
       <%= f.label :email %>
       <%= f.text_field :email %>
+    </div>
 
+    <div class="control-group">
       <%= f.label :password %>
       <%= f.password_field :password %>
+    </div>
 
+    <div class="control-group">
       <%= f.label :password_confirmation, "Confirm Password" %>
       <%= f.password_field :password_confirmation %>
+    </div>
 
-      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+    <div class="control-group">
+      <%= f.label :avatar %><br />
+      <%= f.file_field :avatar %>
+    </div>
+
+    <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">change</a>
   </div>
 </div>

@@ -23,7 +23,7 @@
 
    
 /*****  LOGIN FORM   ****/
-.login-form p{
+.login-form p, label{
 	color:#34495e;
 }
 
@@ -39,4 +39,8 @@ textarea.alta-reto{
 
 #error_explanation ul li {
 	color: #c0392b;
+}
+
+#user_avatar{
+	color:#34495e;
 }

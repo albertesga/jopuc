@@ -311,6 +311,13 @@ h6 {
   letter-spacing: -2px;
   line-height: 100px; 
   color: white;
+  margin-top: -17px;
+   }
+   h1.image-logo{
+    background: url("/assets/demo/logo.png") center center no-repeat;
+    height: 146px;
+    width: 300px;
+    margin-bottom: -5px;
    }
   .demo-logo .logo {
     background: url("/assets/demo/logo-mask.png") center 0 no-repeat;
