@@ -228,10 +228,6 @@ body {
   line-height: 20px;
   background-color: #34495e;
   color: white!important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 a {

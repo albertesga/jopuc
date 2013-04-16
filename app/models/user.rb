@@ -29,11 +29,14 @@ class User < ActiveRecord::Base
     thumb: '100x100>',
     square: '200x200#',
     medium: '300x300>'
-  }
+    },:storage        => :s3, 
+    :bucket => ENV['jopuc'],
+    :access_key_id => ENV['AKIAJ2WLPDJAI4Q57UTA'],
+    :secret_access_key => ENV['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']
 
-  private
+    private
 
     def create_remember_token
       self.remember_token = SecureRandom.urlsafe_base64
     end
-end
+  end

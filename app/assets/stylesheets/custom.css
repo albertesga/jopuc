@@ -6,22 +6,26 @@
 
 .menu-home{
 	margin-top: 30px;
-	}
-	
+}
+
 .menu-home .navbar-inverse .navbar-inner{
 	background: transparent!important;	
 }
 
 .home-background{
 	background: url('/assets/bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .demo-logo a {
-  text-decoration: none!important;
-  color: white;
-   }
+	text-decoration: none!important;
+	color: white;
+}
 
-   
+
 /*****  LOGIN FORM   ****/
 .login-form p, label{
 	color:#34495e;
